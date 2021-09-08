@@ -5,4 +5,4 @@ for i in range(0, 10):
             print("{:d}{:d}".format(i, j), end=", ")
         elif i < j and i == 8:
             print("{:d}{:d}".format(i, j))
-        
+ 
