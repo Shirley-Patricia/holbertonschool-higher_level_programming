@@ -12,3 +12,4 @@
 11. Write a function that computes a to the power of b and return the value.
 12. Write a function that prints the numbers from 1 to 100 separated by a space. And for multiples of three print Fizz, for For multiples of five print Buzz and multiples of both three and five print FizzBuzz.
 13. Write a function in C that inserts a number into a sorted singly linked list.
+14. Write a program that prints the ASCII alphabet, in reverse order, alternating lowercase and uppercase (z in lowercase and Y in uppercase) , not followed by a new line.
