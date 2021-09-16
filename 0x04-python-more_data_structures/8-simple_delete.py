@@ -2,5 +2,5 @@
 def simple_delete(a_dictionary, key=""):
     if key == "" or key != list(a_dictionary):
         return a_dictionary
-    del a_dictionary[key]
+    a_dictionary.deleted(key)
     return a_dictionary
