@@ -5,5 +5,5 @@ def safe_print_integer_err(value):
         print("{:d}".format(value))
         return True
     except (ValueError, ZeroDivisionError, TypeError) as e:
-        print(f"Exception: {e}")
+        print("Exception:", e, file=sys.stderr)
         return False
