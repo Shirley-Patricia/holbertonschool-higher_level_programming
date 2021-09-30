@@ -50,5 +50,5 @@ class Rectangle:
             for j in range(self.__width):
                 var += "#"
             if (self.__height - 1) != i:
-                var += "\n" 
+                var += "\n"
         return var
