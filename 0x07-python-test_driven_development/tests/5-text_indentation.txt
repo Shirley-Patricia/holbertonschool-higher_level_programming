@@ -1,0 +1,84 @@
+=========================
+doctest to text identation
+=========================
+this library only have square function.
+
+No string
+=========
+::
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+    >>> text_indentation(1325698)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation([15, 5, 69, 82])
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
+
+::
+
+    >>> text_indentation(15, 5, "Hello", 82)
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 4 were given
+
+::
+
+    >>> text_indentation("house", "cat", "Toy")
+    Traceback (most recent call last):
+    ...
+    TypeError: text_indentation() takes 1 positional argument but 3 were given
+
+String with spaces
+==================
+
+::
+
+    >>> text_indentation("Hello, how are you? My name is Shirley. Nice to meet you. Nice to meet you too")
+    Hello, how are you?
+    <BLANKLINE>
+    My name is Shirley.
+    <BLANKLINE>
+    Nice to meet you.
+    <BLANKLINE>
+    Nice to meet you too
+
+::
+
+    >>> text_indentation("    Cancer can start almost anywhere in the human body, which is made up of trillions of cells.")
+    Cancer can start almost anywhere in the human body,	which is made up of trillions of cells.
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("456321556982")
+    456321556982
+
+::
+
+    >>> text_indentation("I am     studying English    with Immigo.   ")
+    I am studying English with Immigo.
+    <BLANKLINE>
+    
+::
+
+    >>> text_indentation("Hello World: I hope you are doing very well. My name is Rosa, What is your name?")
+    Hello World:
+    <BLANKLINE>
+    I hope you are doing very well.
+    <BLANKLINE>
+    My name is Rosa, What is your name?
+    <BLANKLINE>
+
+::
+
+    >>> text_indentation("I am Chemical    Engineering.    and you?    I am     ")
+    I am Chemical Engineering.
+    <BLANKLINE>
+    and you?
+    <BLANKLINE>
+    I am

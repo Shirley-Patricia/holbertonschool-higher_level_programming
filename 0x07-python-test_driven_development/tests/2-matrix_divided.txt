@@ -1,0 +1,28 @@
+=======================
+doctest to matrix divided to integer
+=======================
+this library only have matrix divided.
+
+Numbers
+=======
+::
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix_divided(matrix, 5)
+    
+
+::
+    >>> matrix_divided(matrix, 5)
+    5
+
+::
+    >>> matrix_divided(matrix, 5)
+
+::
+    >>> matrix_divided(matrix, 5)
+
+::
+    >>> matrix_divided(matrix, 5)
+
+::
+    >>> matrix_divided(matrix, 5)
+
