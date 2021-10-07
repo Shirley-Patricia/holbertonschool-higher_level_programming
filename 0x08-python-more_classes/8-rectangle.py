@@ -74,6 +74,11 @@ class Rectangle:
         else:
             return rect_2
 
+    @classmethod 
+    def square(cls, size=0):
+        if self.__width == self.__height == self.size:
+            return cls(size)
+
     def __del__(self):
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
