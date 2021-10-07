@@ -16,7 +16,7 @@ Numbers
 
 ::
     >>> add_integer(1)
-	99
+    99
 
 ::
     >>> add_integer(3.2, 5.6)
@@ -32,13 +32,13 @@ Numbers
 
 ::
 
-	>>> add_integer(-3.7, -0.4)
-	-3
+    >>> add_integer(-3.7, -0.4)
+    -3
 
 ::
 
-	>>> add_integer(-0.4, 3)
-	3
+    >>> add_integer(-0.4, 3)
+    3
 
 
 string
@@ -162,14 +162,14 @@ None
 
 ::
 
-    >>> add_integer(2, float('inf')) 
+    >>> add_integer(2, float('inf'))
     Traceback (most recent call last):
     ...
-    OverflowError: cannot convert float infinity to integer 
+    OverflowError: cannot convert float infinity to integer
 
 ::
 
-    >>> add_integer(3, float('nan')) 
+    >>> add_integer(3, float('nan'))
     Traceback (most recent call last):
     ...
     ValueError: cannot convert float NaN to integer
