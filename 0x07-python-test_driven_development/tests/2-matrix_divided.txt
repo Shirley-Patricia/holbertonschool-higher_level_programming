@@ -8,21 +8,36 @@ Numbers
 ::
     >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
     >>> matrix_divided(matrix, 5)
-    
+    [[0.2, 0.4, 0.6], [0.8, 1.0, 1.2]]
+    [[1, 2, 3], [4, 5, 6]]
 
 ::
-    >>> matrix_divided(matrix, 5)
-    5
+    >>> matrix_divided(matrix, k)
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
 
 ::
-    >>> matrix_divided(matrix, 5)
+    >>> matrix_divided(matrix, 0)
+    Traceback (most recent call last):
+    ...
+    TypeError: division by zero
 
 ::
-    >>> matrix_divided(matrix, 5)
+    >>> matrix = [[1, 2.8, 3],[4.5, 5, 6]]
+    >>> matrix_divided(matrix, -2)
+    [[-0.5, -1.4, -1.5], [-2.25, -2.5, -3.0]]
 
 ::
-    >>> matrix_divided(matrix, 5)
+    >>> matrix = [[1, 2, 3], "Hello"]
+    >>> matrix_divided(matrix, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 ::
-    >>> matrix_divided(matrix, 5)
-
+    >>> matrix = [[], [], []]
+    >>> print(matrix_divided(matrix, 2))
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
