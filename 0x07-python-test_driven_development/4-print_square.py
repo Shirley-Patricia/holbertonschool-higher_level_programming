@@ -21,7 +21,5 @@ def print_square(size):
         raise TypeError("size must be an integer")
     for i in range(size):
         for j in range(size):
-            if j != (size - 1):
-                print("#", end="")
-            else:
-                print("#")
+            print("#", end="")
+        print()
