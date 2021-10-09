@@ -24,6 +24,10 @@ this library only have square function.
     ########
     ########
 
+::
+    >>> print_square(1)
+    #
+
 float and negative numbers
 ==========================
     >>> print_square(5.2)
