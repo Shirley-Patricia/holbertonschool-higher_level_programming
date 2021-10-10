@@ -10,6 +10,8 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_integer(self):
         # Check that result.max_integer fail when function run
         self.assertAlmostEqual(max_integer([2, 4, 8, 6]), 8)
+        self.assertAlmostEqual(max_integer([2, 5, 9, 12]), 12)
+        self.assertAlmostEqual(max_integer([25]), 25)
 
     def test_only_negative_numbers(self):
         self.assertAlmostEqual(max_integer([-1, -3, -5, -7]), -1)
