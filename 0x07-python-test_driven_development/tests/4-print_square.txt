@@ -40,6 +40,11 @@ float and negative numbers
     ...
     ValueError: size must be >= 0
 
+    >>> print_square(-2.4)
+    Traceback (most recent call last):
+    ...
+    TypeError: size must be an integer
+
 Strings
 =======
     >>> print_square("kola")
