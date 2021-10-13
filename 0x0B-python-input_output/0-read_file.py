@@ -7,4 +7,4 @@ with open and print in stdout
 def read_file(filename=""):
     """using open to read file"""
     with open(filename, 'r') as file:
-        print(file.read())
+        print(file.read(), end="")
