@@ -44,14 +44,12 @@ class Square(Rectangle):
             for count, item in enumerate(args, 0):
                 if count == 0:
                     self.id = item
-                if count == 1:
-                    self.__width = item
-                if count == 2:
-                    self.__height = item
-                if count == 3:
-                    self.__x = item
-                if count == 4:
-                    self.__y = item
+                elif count == 1:
+                    self.size = item
+                elif count == 2:
+                    self.x = item
+                elif count == 3:
+                    self.y = item
         else:
             for key in kwargs.keys():
                 if key == "id":
