@@ -147,4 +147,14 @@ class Rectangle(Base):
                 if key == "y":
                     self.y = kwargs["y"]
 
-    # def to_dictionary(self):
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle"""
+
+        dict_rectangle = {}
+        dict_rectangle["id"] = self.id
+        dict_rectangle["width"] = self.width
+        dict_rectangle["height"] = self.height
+        dict_rectangle["x"] = self.x
+        dict_rectangle["y"] = self.y
+
+        return dict_rectangle
