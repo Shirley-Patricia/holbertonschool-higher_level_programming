@@ -14,10 +14,16 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initialize attributes to describe a rectangle"""
         super().__init__(id)
-        self.integer_validator("width", width)
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be > 0")
         self.__width = width
 
-        self.integer_validator("height", height)
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height <= 0:
+            raise ValueError("height must be > 0")
         self.__height = height
 
         if not isinstance(x, int):
