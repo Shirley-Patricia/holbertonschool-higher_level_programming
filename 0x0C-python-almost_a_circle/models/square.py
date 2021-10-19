@@ -22,6 +22,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
+        """set the new value to size"""
         self.width = value
         self.height = value
 
@@ -34,6 +35,7 @@ class Square(Rectangle):
         return text1 + text2
 
     def update(self, *args, **kwargs):
+        """Update the class Square by adding the public method """
         if len(args) >= 1:
             """enumerate() method adds counter to an iterable and returns it.
             The returned object is an enumerate object.

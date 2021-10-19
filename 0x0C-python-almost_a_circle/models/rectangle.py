@@ -39,6 +39,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, width):
+        """the setter method to store a new value in the attribute"""
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
         if width <= 0:
@@ -52,6 +53,7 @@ class Rectangle(Base):
 
     @height.setter
     def height(self, height):
+        """the setter method to store a new value in the attribute"""
         if not isinstance(height, int):
             raise TypeError("height must be an integer")
         if height <= 0:
@@ -65,6 +67,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
+        """the setter method to store a new value in the attribute"""
         if not isinstance(x, int):
             raise TypeError("x must be an integer")
         if x <= 0:
@@ -78,6 +81,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
+        """the setter method to store a new value in the attribute"""
         if not isinstance(y, int):
             raise TypeError("y must be an integer")
         if y <= 0:
@@ -85,20 +89,24 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
+        """area calculated"""
         return (self.__width * self.__height)
 
     def display(self):
+        """show figure rectangle with #"""
         for i in range(self.__height):
             for j in range(self.__width):
                 print("#", end="")
             print()
 
     def __str__(self):
+        """return a string"""
         text1 = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
         text2 = " {}/{}".format(self.width, self.height)
         return text1 + text2
 
     def update(self, *args, **kwargs):
+        """Update the class Rectangle by adding the public method"""
         if len(args) >= 1:
             if len(args) == 1:
                 self.id = args[0]
@@ -140,4 +148,3 @@ class Rectangle(Base):
                     self.y = kwargs["y"]
 
     # def to_dictionary(self):
-    #    return kwargs
