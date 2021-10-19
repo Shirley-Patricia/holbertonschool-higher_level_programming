@@ -94,10 +94,16 @@ class Rectangle(Base):
 
     def display(self):
         """show figure rectangle with #"""
-        for i in range(self.__height):
-            for j in range(self.__width):
-                print("#", end="")
+        for h in range(0, self.__y):
             print()
+        space = ""
+        for f in range(0, self.__x):
+            space += " "
+        s = ""
+        for j in range(self.__width):
+            s += "#"
+        for i in range(self.__height):
+            print(space + s)
 
     def __str__(self):
         """return a string"""
