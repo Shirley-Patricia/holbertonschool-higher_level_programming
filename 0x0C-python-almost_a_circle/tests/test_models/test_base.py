@@ -10,7 +10,11 @@ class Test_Base(unittest.TestCase):
     def test_none_id(self):
         Base._Base__nb_objects = 0
         f = Base()
-        self.assertEqual(f.id, 1, "if fail is an error")
+        f2 = Base()
+        f3 = Base()
+        self.assertAlmostEqual(f.id, 1)
+        self.assertAlmostEqual(f2.id, 2)
+        self.assertAlmostEqual(f3.id, 3)
 
     def test_instance_(self):
         # Check the instance
@@ -19,7 +23,7 @@ class Test_Base(unittest.TestCase):
 
     def test_id_equal(self):
         c = Base(5)
-        self.assertEqual(c.id, 5)
+        self.assertAlmostEqual(c.id, 5)
 
     def test_no_object(self):
         a = Base("g")
