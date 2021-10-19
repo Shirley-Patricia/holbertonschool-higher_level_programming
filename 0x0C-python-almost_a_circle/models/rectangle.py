@@ -102,7 +102,7 @@ class Rectangle(Base):
     def __str__(self):
         """return a string"""
         text1 = "[Rectangle] ({}) {}/{}".format(self.id, self.x, self.y)
-        text2 = " {}/{}".format(self.width, self.height)
+        text2 = " - {}/{}".format(self.width, self.height)
         return text1 + text2
 
     def update(self, *args, **kwargs):
