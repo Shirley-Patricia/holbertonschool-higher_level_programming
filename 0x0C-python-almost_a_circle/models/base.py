@@ -4,6 +4,9 @@ My class module, project almost a circle
 """
 
 
+import json
+
+
 class Base:
     """ first class: class base
     __nb_objects is a private class attribute.
@@ -34,10 +37,9 @@ class Base:
     @staticmethod
     def to_json_string(list_dictionaries):
         """returns the JSON string representation of list_dictionaries"""
-        if list_dictionariesn is None or list_dictionaries == []:
+        if list_dictionaries == []:
             return "[]"
         else:
-            return
-            json.dump(list_dictionaries)
+            return json.dumps(list_dictionaries)
 
     """ def save_to_file(cls, list_objs):"""
