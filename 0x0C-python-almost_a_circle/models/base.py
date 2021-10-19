@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" 
+"""
 My class module, project almost a circle
 """
+
 
 class Base:
     """ first class or class base
@@ -25,14 +26,14 @@ class Base:
                 raise ValueError("{} must be > 0".format(name))
         if value < 0:
             if name == x or name == y:
-                raise ValueError("{} must be >= 0".format(name))  
-    
+                raise ValueError("{} must be >= 0".format(name))
+
     @staticmethod
     def to_json_string(list_dictionaries):
         if list_dictionariesn is None or list_dictionaries == []:
             return "[]"
         else:
-            return 
+            return
             json.dump(list_dictionaries)
-    
+
     # def save_to_file(cls, list_objs):
