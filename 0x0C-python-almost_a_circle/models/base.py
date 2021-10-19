@@ -5,13 +5,15 @@ My class module, project almost a circle
 
 
 class Base:
-    """ first class or class base
+    """ first class: class base
+    __nb_objects is a private class attribute.
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """initiation of the class"""
+        """ class constructor, 
+        initiation of the class."""
         if id is not None:
             self.id = id
         else:
@@ -19,6 +21,7 @@ class Base:
             self.id = Base.__nb_objects
 
     def integer_validator(self, name, value):
+        """integer validation of attributes of rectangle"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
@@ -30,10 +33,11 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
+        """returns the JSON string representation of list_dictionaries"""
         if list_dictionariesn is None or list_dictionaries == []:
             return "[]"
         else:
             return
             json.dump(list_dictionaries)
 
-    # def save_to_file(cls, list_objs):
+    """ def save_to_file(cls, list_objs):"""
