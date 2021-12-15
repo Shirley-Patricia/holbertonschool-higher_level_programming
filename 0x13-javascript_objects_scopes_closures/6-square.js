@@ -7,14 +7,15 @@ module.exports = class Square extends Rectangle {
     super(size, size);
   }
 
-  charPrint (c = 'X') {
+  charPrint (c) {
     let size;
     let j;
 
     for (size = 0; size < this.height; size++) {
       let row = '';
       for (j = 0; j < this.width; j++) {
-        row += c;
+        if (c) row += c;
+        else row += 'X';
       }
       console.log(row);
     }
