@@ -15,9 +15,9 @@ if __name__ == "__main__":
         SELECT
             cities.name FROM cities
         INNER JOIN
-            states ON cities.state_id=states.id 
-        WHERE 
-            states.name= %(states.name)s 
+            states ON cities.state_id=states.id
+        WHERE
+            states.name= %(states.name)s
         ORDER BY cities.id ASC
     """, {
         'states.name': sys.argv[4]
@@ -29,7 +29,7 @@ if __name__ == "__main__":
         print(x[0], end="")
         if i < (len(result) - 1):
             print(", ", end="")
-            i +=1
+            i += 1
     print()
 
     db.close()
