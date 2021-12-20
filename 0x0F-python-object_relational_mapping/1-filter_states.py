@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""list all states from database hbtn_0e_0_usa
+"""lists all states with a name starting with N (upper N)
+   from the database hbtn_0e_0_usa
 """
 if __name__ == "__main__":
     import sys
@@ -10,7 +11,8 @@ if __name__ == "__main__":
 
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cur.execute("SELECT * FROM states WHERE name\
+                LIKE BINARY 'N%' ORDER BY id ASC")
 
     result = cur.fetchall()
     for x in result:
