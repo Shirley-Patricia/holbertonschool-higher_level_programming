@@ -4,7 +4,7 @@
 """
 
 from urllib import request
-import urllib.Error
+import urllib.error
 import sys
 
 if __name__ == "__main__":
