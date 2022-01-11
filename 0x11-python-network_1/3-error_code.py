@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# Write a Python script that fetches https://intranet.hbtn.io/status
+"""Script that takes in a URL, sends a request to the URL and
+   displays the body of the response (decoded in utf-8).
+"""
 
 from urllib import request
 import urllib.Error
