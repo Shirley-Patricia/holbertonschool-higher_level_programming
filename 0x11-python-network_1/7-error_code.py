@@ -8,7 +8,6 @@ if __name__ == "__main__":
     import sys
 
     req = requests.get(sys.argv[1])
+    print(req.text)
     if req.raise_for_status():
         print("Error code: {}".format(req.status_code))
-    else:
-        print(req.text)
