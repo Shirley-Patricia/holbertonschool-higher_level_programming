@@ -11,10 +11,11 @@ request(url, (error, response, body) => {
   let i;
   let j;
 
-  for (i = 0; i < bodies.results.length; i++) {
+  for (i in bodies.results) {
     const len = bodies.results[i].characters.length;
     for (j = 0; j < len; j++) {
-      if (bodies.results[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18/') {
+      const sentence = bodies.results[i].characters[j];
+      if (sentence.includes('/18/')) {
         count++;
       }
     }
