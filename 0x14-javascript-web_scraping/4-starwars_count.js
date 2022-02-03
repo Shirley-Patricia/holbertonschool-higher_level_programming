@@ -9,7 +9,7 @@ request(url, (error, response, body) => {
   const bodies = JSON.parse(body);
 
   let count = 0;
-  for (let i in bodies.results) {
+  for (const i in bodies.results) {
     const len = bodies.results[i].characters.length;
     for (let j = 0; j < len; j++) {
       const sentence = bodies.results[i].characters[j];
