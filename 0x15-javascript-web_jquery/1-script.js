@@ -4,5 +4,6 @@
  * <header> element to red (#FF0000).
  * You must use the JQuery API
  */
-
-$('header').css('color', '#FF0000');
+$(document).ready(function () {
+  $('header').css('color', '#FF0000');
+});
